@@ -1,380 +1,400 @@
-/* Základní nastavení */
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
 
 html {
-    scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #111827;
-    color: white;
-    line-height: 1.6;
+font-family: "Poppins", sans-serif;
+color: #222;
+background: #f5f5f5;
+line-height: 1.6;
 }
 
-
-/* Navigace */
+header {
+position: sticky;
+top: 0;
+z-index: 10;
+background: #fff;
+border-bottom: 1px solid #ddd;
+}
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 20px 8%;
-
-    background-color: #0f172a;
+max-width: 1100px;
+margin: auto;
+padding: 18px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: 700;
+color: #222;
+text-decoration: none;
+font-size: 20px;
+font-weight: 700;
 }
 
-.logo i {
-    margin-right: 8px;
+nav ul {
+display: flex;
+gap: 25px;
+list-style: none;
 }
 
-.menu {
-    display: flex;
-    gap: 25px;
+nav a {
+color: #333;
+text-decoration: none;
 }
 
-.menu a {
-    color: white;
-    text-decoration: none;
+nav a:hover,
+.projekt a:hover {
+color: #777;
 }
-
-.menu a:hover {
-    color: #60a5fa;
-}
-
-
-/* Úvod */
 
 .uvod {
-    min-height: 80vh;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    gap: 50px;
-
-    padding: 70px 8%;
+max-width: 1100px;
+min-height: 600px;
+margin: auto;
+padding: 70px 20px;
+display: flex;
+align-items: center;
+gap: 60px;
 }
 
-.uvod-text {
-    max-width: 650px;
+.uvod > div {
+flex: 1;
 }
 
-.male {
-    color: #60a5fa;
-    font-size: 18px;
+.uvod > img {
+width: 48%;
+height: 400px;
+object-fit: cover;
+box-shadow: 20px 20px #ddd;
+}
+
+.tag,
+.nadpis p {
+color: #777;
+font-size: 13px;
+font-weight: 600;
+letter-spacing: 1px;
 }
 
 h1 {
-    font-size: 55px;
-    margin-bottom: 5px;
+font-size: 55px;
+line-height: 1.15;
+margin: 15px 0;
 }
 
-.uvod h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
+h1 span {
+color: #555;
 }
 
-.uvod-text > p {
-    margin-bottom: 25px;
+.uvod p:not(.tag) {
+color: #666;
 }
 
-.uvod-obrazek img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
+.tlacitka {
+margin-top: 25px;
 }
 
-
-/* Tlačítko */
-
-.tlacitko {
-    display: inline-block;
-
-    padding: 12px 20px;
-
-    background-color: #2563eb;
-    color: white;
-
-    text-decoration: none;
+.tlacitka a {
+display: inline-block;
+padding: 11px 20px;
+margin-right: 7px;
+color: #fff;
+background: #222;
+text-decoration: none;
 }
 
-.tlacitko:hover {
-    background-color: #1d4ed8;
+.tlacitka .druhy {
+color: #222;
+background: #fff;
+border: 1px solid #ddd;
 }
 
+.statistiky {
+max-width: 1100px;
+margin: 0 auto 40px;
+padding: 0 20px;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 15px;
+}
 
-/* Obecné sekce */
+.statistiky > div {
+padding: 25px 15px;
+text-align: center;
+background: #fff;
+border: 1px solid #ddd;
+}
+
+.statistiky i,
+.dovednosti i {
+display: block;
+font-size: 25px;
+margin-bottom: 8px;
+}
+
+.statistiky strong,
+.statistiky span {
+display: block;
+}
+
+.statistiky span {
+color: #888;
+font-size: 13px;
+}
 
 .sekce {
-    padding: 80px 8%;
+max-width: 1100px;
+margin: auto;
+padding: 75px 20px;
 }
 
-.sekce > h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 15px;
+.nadpis {
+margin-bottom: 30px;
 }
 
-.sekce > p {
-    text-align: center;
+.nadpis h2 {
+font-size: 34px;
 }
 
-
-/* O mně */
-
-.omne {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-
-    max-width: 1000px;
-    margin: 40px auto 0;
+.o-mne {
+display: flex;
+gap: 40px;
+align-items: center;
+padding: 25px;
+background: #fff;
+border: 1px solid #ddd;
 }
 
-.omne-obrazek {
-    width: 45%;
+.o-mne img {
+width: 45%;
+height: 330px;
+object-fit: cover;
 }
 
-.omne-obrazek img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+.o-mne h3 {
+font-size: 25px;
+margin-bottom: 15px;
 }
 
-.omne-text {
-    width: 55%;
+.o-mne p {
+color: #666;
+margin-bottom: 15px;
 }
 
-.omne-text h3 {
-    font-size: 25px;
-    margin-bottom: 15px;
+.dovednosti-sekce {
+max-width: none;
+background:
+linear-gradient(#fffffff2, #fffffff2),
+url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1600&q=80") center / cover;
 }
 
-.omne-text p {
-    margin-bottom: 15px;
+.dovednosti-sekce .nadpis,
+.dovednosti {
+max-width: 1100px;
+margin-left: auto;
+margin-right: auto;
 }
-
-
-/* Dovednosti */
 
 .dovednosti {
-    background-color: #0f172a;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 18px;
 }
 
-.dovednosti-box {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-
-    margin-top: 40px;
+.dovednosti > div {
+padding: 30px 20px;
+background: #fff;
+border: 1px solid #ddd;
 }
 
-.dovednost {
-    width: 23%;
-    padding: 30px;
-
-    background-color: #1e293b;
-
-    text-align: center;
+.dovednosti p,
+.casova-osa p,
+.projekt p {
+color: #777;
+font-size: 14px;
 }
 
-.dovednost i {
-    font-size: 35px;
-    margin-bottom: 15px;
+.casova-osa {
+display: flex;
+gap: 20px;
 }
 
-.dovednost h3 {
-    margin-bottom: 10px;
+.casova-osa > div {
+flex: 1;
+padding: 25px;
+background: #fff;
+border-left: 4px solid #222;
 }
 
+.casova-osa span,
+.projekt span {
+color: #999;
+font-size: 13px;
+}
 
-/* Projekty */
+.popis {
+color: #777;
+margin: -15px 0 30px;
+}
 
 .projekty {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-
-    margin-top: 40px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 25px;
 }
 
 .projekt {
-    width: 45%;
+background: #fff;
+border: 1px solid #ddd;
+transition: .3s;
+}
 
-    background-color: #1e293b;
+.projekt:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px #0001;
 }
 
 .projekt img {
-    width: 100%;
-    height: 220px;
-
-    object-fit: cover;
+width: 100%;
+height: 240px;
+object-fit: cover;
 }
 
-.projekt-obsah {
-    padding: 25px;
+.projekt > div {
+padding: 25px;
 }
 
 .projekt h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
+font-size: 24px;
+margin: 5px 0;
 }
 
-.projekt p {
-    margin-bottom: 20px;
+.projekt a {
+color: #222;
+font-weight: 600;
+text-decoration: none;
 }
-
-.projekt-tlacitko {
-    display: inline-block;
-
-    padding: 10px 15px;
-
-    background-color: #2563eb;
-    color: white;
-
-    text-decoration: none;
-}
-
-.projekt-tlacitko:hover {
-    background-color: #1d4ed8;
-}
-
-
-/* Kontakt */
 
 .kontakt {
-    background-color: #0f172a;
-    text-align: center;
+padding-bottom: 90px;
+}
+
+.kontakt-box {
+display: flex;
+gap: 40px;
+align-items: center;
+padding: 45px;
+color: #fff;
+background:
+linear-gradient(#191919e6, #191919e6),
+url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1500&q=80") center / cover;
+}
+
+.kontakt-box > div {
+flex: 1;
+}
+
+.kontakt-box h2 {
+font-size: 34px;
+margin: 8px 0;
 }
 
 .kontakty {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-
-    margin-top: 35px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
 }
 
-.kontakty a {
-    color: white;
-    text-decoration: none;
-
-    padding: 15px 20px;
-
-    background-color: #1e293b;
+.kontakty a,
+.kontakty > div {
+padding: 14px;
+color: #222;
+background: #fff;
+text-decoration: none;
 }
 
 .kontakty a:hover {
-    background-color: #2563eb;
+background: #eee;
 }
-
-.kontakty i {
-    margin-right: 8px;
-}
-
-
-/* Footer */
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 25px 8%;
-
-    background-color: #020617;
+padding: 25px;
+text-align: center;
+color: #777;
+background: #fff;
+border-top: 1px solid #ddd;
 }
 
-.socialni-site {
-    display: flex;
-    gap: 20px;
+@media (max-width: 850px) {
+nav {
+flex-direction: column;
+gap: 12px;
 }
 
-.socialni-site a {
-    color: white;
-    font-size: 20px;
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
-.socialni-site a:hover {
-    color: #60a5fa;
+.uvod,
+.o-mne,
+.kontakt-box {
+    flex-direction: column;
 }
 
+.uvod {
+    text-align: center;
+}
 
-/* Responzivita */
+.uvod > img,
+.o-mne img {
+    width: 100%;
+}
 
-@media (max-width: 800px) {
+.statistiky,
+.dovednosti {
+    grid-template-columns: repeat(2, 1fr);
+}
 
-    nav {
-        flex-direction: column;
-        gap: 15px;
-    }
+.casova-osa {
+    flex-direction: column;
+}
 
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+}
 
+@media (max-width: 600px) {
+h1 {
+font-size: 40px;
+}
 
-    .uvod {
-        flex-direction: column;
-        text-align: center;
-    }
+.uvod > img {
+    height: 280px;
+    box-shadow: 10px 10px #ddd;
+}
 
-    h1 {
-        font-size: 42px;
-    }
+.statistiky,
+.dovednosti,
+.projekty,
+.kontakty {
+    grid-template-columns: 1fr;
+}
 
-    .uvod-obrazek img {
-        width: 100%;
-        max-width: 500px;
-    }
+.kontakt-box {
+    padding: 30px 20px;
+}
 
-
-    .omne {
-        flex-direction: column;
-    }
-
-    .omne-obrazek,
-    .omne-text {
-        width: 100%;
-    }
-
-
-    .dovednosti-box {
-        flex-direction: column;
-    }
-
-    .dovednost {
-        width: 100%;
-    }
-
-
-    .projekty {
-        flex-direction: column;
-    }
-
-    .projekt {
-        width: 100%;
-    }
-
-
-    footer {
-        flex-direction: column;
-        gap: 15px;
-    }
+.tlacitka a {
+    display: block;
+    margin: 8px 0;
+}
 
 }

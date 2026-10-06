@@ -1,283 +1,240 @@
 <!DOCTYPE html>
-<html lang="cs">
 
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Portfolio Filipa Holuši">
     <title>Filip Holuša | Portfolio</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+```
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="styl.css">
+```
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styl.css">
 </head>
 
 <body>
 
-    <!-- Navigace -->
+<header>
     <nav>
-        <div class="logo">
-            <i class="fa-solid fa-code"></i>
-            Filip Holuša
+        <a class="logo" href="#domu"><i class="fas fa-code"></i> Filip Holuša</a>
+
+```
+    <ul>
+        <li><a href="#domu">Domů</a></li>
+        <li><a href="#omne">O mně</a></li>
+        <li><a href="#dovednosti">Dovednosti</a></li>
+        <li><a href="#projekty">Projekty</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+</nav>
+```
+
+</header>
+
+<main>
+
+```
+<section id="domu" class="uvod">
+    <div>
+        <p class="tag">STUDENT • PROGRAMOVÁNÍ • WEB</p>
+        <h1>Ahoj, jsem<br><span>Filip Holuša.</span></h1>
+
+        <p>
+            Jsem student střední školy a začínající programátor.
+            Baví mě tvorba webů, počítače a nové technologie.
+        </p>
+
+        <div class="tlacitka">
+            <a href="#projekty">Moje projekty</a>
+            <a class="druhy" href="#kontakt">Kontakt</a>
         </div>
+    </div>
 
-        <div class="menu">
-            <a href="#domu">Domů</a>
-            <a href="#omne">O mně</a>
-            <a href="#projekty">Projekty</a>
-            <a href="#kontakt">Kontakt</a>
-        </div>
-    </nav>
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Notebook s programováním">
+</section>
 
+<section class="statistiky">
+    <div><i class="fas fa-graduation-cap"></i><strong>Student</strong><span>střední školy</span></div>
+    <div><i class="fas fa-laptop-code"></i><strong>HTML & CSS</strong><span>hlavní zaměření</span></div>
+    <div><i class="fas fa-project-diagram"></i><strong>2+</strong><span>projekty</span></div>
+    <div><i class="fas fa-lightbulb"></i><strong>Nové nápady</strong><span>stále se učím</span></div>
+</section>
 
-    <!-- Úvod -->
-    <section id="domu" class="uvod">
+<section id="omne" class="sekce">
+    <div class="nadpis">
+        <p>01 / O MNĚ</p>
+        <h2>Něco málo o mně</h2>
+    </div>
 
-        <div class="uvod-text">
+    <div class="o-mne">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Programování na počítači">
 
-            <p class="male">Ahoj, jsem</p>
-
-            <h1>Filip Holuša</h1>
-
-            <h2>Začínající programátor</h2>
+        <div>
+            <h3>Student, který rád tvoří</h3>
 
             <p>
-                Jsem student střední školy, který se zajímá o programování,
-                tvorbu webových stránek a moderní technologie.
+                Jsem student střední školy a ve volném čase se věnuji
+                počítačům, tvorbě webů a začínajícímu programování.
             </p>
 
-            <a href="#projekty" class="tlacitko">
-                <i class="fa-solid fa-folder-open"></i>
-                Moje projekty
-            </a>
+            <p>
+                Rád zkouším nové věci. Baví mě také grafika,
+                úprava videí, sociální sítě a digitální obsah.
+            </p>
 
+            <p>
+                Mým cílem je získávat nové zkušenosti a vytvářet
+                stále lepší projekty.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="dovednosti" class="sekce dovednosti-sekce">
+    <div class="nadpis">
+        <p>02 / DOVEDNOSTI</p>
+        <h2>Co se učím</h2>
+    </div>
+
+    <div class="dovednosti">
+        <div>
+            <i class="fab fa-html5"></i>
+            <h3>HTML</h3>
+            <p>Tvorba struktury webových stránek.</p>
         </div>
 
-        <div class="uvod-obrazek">
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Programování na počítači">
+        <div>
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS</h3>
+            <p>Vzhled a responzivní design.</p>
         </div>
 
-    </section>
-
-
-    <!-- O mně -->
-    <section id="omne" class="sekce">
-
-        <h2>O mně</h2>
-
-        <div class="omne">
-
-            <div class="omne-obrazek">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Programování">
-            </div>
-
-            <div class="omne-text">
-
-                <h3>Něco o mně</h3>
-
-                <p>
-                    Jmenuji se Filip Holuša a jsem student střední školy.
-                    Ve volném čase se věnuji především počítačům,
-                    programování a tvorbě webových stránek.
-                </p>
-
-                <p>
-                    V současnosti se zaměřuji hlavně na HTML a CSS
-                    a postupně se učím další technologie.
-                    Baví mě vytvářet vlastní projekty a zkoušet nové věci.
-                </p>
-
-                <p>
-                    Kromě programování mě zajímají sociální sítě,
-                    tvorba obsahu a práce s počítačovými technologiemi.
-                </p>
-
-            </div>
-
+        <div>
+            <i class="fas fa-code"></i>
+            <h3>Programování</h3>
+            <p>Učím se základy programování.</p>
         </div>
 
-    </section>
+        <div>
+            <i class="fas fa-paint-brush"></i>
+            <h3>Grafika</h3>
+            <p>Zajímám se o design a digitální obsah.</p>
+        </div>
+    </div>
+</section>
 
+<section class="sekce">
+    <div class="nadpis">
+        <p>03 / STUDIUM</p>
+        <h2>Moje cesta</h2>
+    </div>
 
-    <!-- Moje dovednosti -->
-    <section class="sekce dovednosti">
-
-        <h2>Čemu se věnuji</h2>
-
-        <div class="dovednosti-box">
-
-            <div class="dovednost">
-                <i class="fa-brands fa-html5"></i>
-                <h3>HTML</h3>
-                <p>Tvorba struktury webových stránek.</p>
-            </div>
-
-            <div class="dovednost">
-                <i class="fa-brands fa-css3-alt"></i>
-                <h3>CSS</h3>
-                <p>Úprava vzhledu a responzivního designu.</p>
-            </div>
-
-            <div class="dovednost">
-                <i class="fa-solid fa-code"></i>
-                <h3>Programování</h3>
-                <p>Učení základů programování a tvorba vlastních projektů.</p>
-            </div>
-
-            <div class="dovednost">
-                <i class="fa-solid fa-video"></i>
-                <h3>Tvorba obsahu</h3>
-                <p>Úprava videí, práce s obsahem a sociálními sítěmi.</p>
-            </div>
-
+    <div class="casova-osa">
+        <div>
+            <span>01</span>
+            <h3>Střední škola</h3>
+            <p>Studium informatiky a tvorby webů.</p>
         </div>
 
-    </section>
+        <div>
+            <span>02</span>
+            <h3>První projekty</h3>
+            <p>Začal jsem vytvářet vlastní weby a školní projekty.</p>
+        </div>
 
+        <div>
+            <span>03</span>
+            <h3>Další rozvoj</h3>
+            <p>Chci se dále zlepšovat v programování a designu.</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Projekty -->
-    <section id="projekty" class="sekce">
-
+<section id="projekty" class="sekce">
+    <div class="nadpis">
+        <p>04 / PROJEKTY</p>
         <h2>Moje projekty</h2>
+    </div>
 
-        <p>
-            Zde jsou některé z mých školních a osobních projektů.
-        </p>
+    <p class="popis">Některé projekty, na kterých jsem pracoval během studia.</p>
 
-        <div class="projekty">
+    <div class="projekty">
+        <div class="projekt">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80" alt="Programovací kód">
 
-            <!-- Projekt 1 -->
-            <div class="projekt">
+            <div>
+                <span>01</span>
+                <h3>Můj první projekt</h3>
+                <p>Můj první větší projekt z 2. ročníku střední školy.</p>
 
-                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80" alt="Webový projekt">
-
-                <div class="projekt-obsah">
-
-                    <h3>Můj první projekt</h3>
-
-                    <p>
-                        Můj první větší projekt vytvořený ve 2. ročníku
-                        na střední škole.
-                    </p>
-
-                    <a href="https://github.com/filipholusa/muj-prvni-projekt"
-                       target="_blank"
-                       class="projekt-tlacitko">
-
-                        <i class="fa-brands fa-github"></i>
-                        Zobrazit projekt
-
-                    </a>
-
-                </div>
-
+                <a href="https://github.com/filipholusa/muj-prvni-projekt" target="_blank" rel="noopener noreferrer">
+                    GitHub projektu <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
-
-
-            <!-- Projekt 2 -->
-            <div class="projekt">
-
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Programování">
-
-                <div class="projekt-obsah">
-
-                    <h3>Zajímavější projekt</h3>
-
-                    <p>
-                        Jeden z mých zajímavějších projektů vytvořený
-                        ve 3. ročníku na střední škole.
-                    </p>
-
-                    <a href="https://filipholusa.github.io/vebbez2v/"
-                       target="_blank"
-                       class="projekt-tlacitko">
-
-                        <i class="fa-solid fa-globe"></i>
-                        Navštívit projekt
-
-                    </a>
-
-                </div>
-
-            </div>
-
         </div>
 
-    </section>
+        <div class="projekt">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="Webová stránka a programovací kód">
 
+            <div>
+                <span>02</span>
+                <h3>Webový projekt</h3>
+                <p>Zajímavější webový projekt z 3. ročníku střední školy.</p>
 
-    <!-- Kontakt -->
-    <section id="kontakt" class="sekce kontakt">
+                <a href="https://filipholusa.github.io/vebbez2v/" target="_blank" rel="noopener noreferrer">
+                    Otevřít web <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <h2>Kontakt</h2>
-
-        <p>
-            Pokud mě chceš kontaktovat, najdeš mě zde:
-        </p>
+<section id="kontakt" class="sekce kontakt">
+    <div class="kontakt-box">
+        <div>
+            <p class="tag">05 / KONTAKT</p>
+            <h2>Máš nějaký nápad?</h2>
+            <p>
+                Pokud mě chceš kontaktovat nebo se podívat
+                na moje další projekty, najdeš mě zde.
+            </p>
+        </div>
 
         <div class="kontakty">
-
             <a href="tel:603999523">
-                <i class="fa-solid fa-phone"></i>
-                603 999 523
+                <i class="fas fa-phone"></i> 603 999 523
             </a>
 
             <a href="mailto:Projektantfilip@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-                Projektantfilip@gmail.com
+                <i class="fas fa-envelope"></i> Projektantfilip@gmail.com
             </a>
 
-            <a href="https://github.com/filipholusa" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                GitHub
+            <a href="https://github.com/filipholusa" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> GitHub
             </a>
 
-            <a href="#">
-                <i class="fa-brands fa-discord"></i>
-                ProjektantFilip11
+            <a href="https://www.instagram.com/ProjektantFilip12/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i> Instagram
             </a>
 
-            <a href="#" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-                ProjektantFilip12
-            </a>
-
+            <div>
+                <i class="fab fa-discord"></i> ProjektantFilip11
+            </div>
         </div>
+    </div>
+</section>
+```
 
-    </section>
+</main>
 
-
-    <!-- Patička -->
-    <footer>
-
-        <p>
-            © 2026 Filip Holuša
-        </p>
-
-        <div class="socialni-site">
-
-            <a href="https://github.com/filipholusa" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa-brands fa-discord"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-
-        </div>
-
-    </footer>
+<footer>
+    © 2026 Filip Holuša • Vytvořeno pomocí HTML & CSS <i class="fas fa-code"></i>
+</footer>
 
 </body>
 </html>
