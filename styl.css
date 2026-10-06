@@ -2,399 +2,397 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  }
+}
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-font-family: "Poppins", sans-serif;
-color: #222;
-background: #f5f5f5;
-line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background: #f5f5f5;
+  line-height: 1.6;
 }
 
 header {
-position: sticky;
-top: 0;
-z-index: 10;
-background: #fff;
-border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
 }
 
 nav {
-max-width: 1100px;
-margin: auto;
-padding: 18px 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-color: #222;
-text-decoration: none;
-font-size: 20px;
-font-weight: 700;
+  color: #222;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 nav ul {
-display: flex;
-gap: 25px;
-list-style: none;
+  display: flex;
+  gap: 25px;
+  list-style: none;
 }
 
 nav a {
-color: #333;
-text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
 nav a:hover,
 .projekt a:hover {
-color: #777;
+  color: #777;
 }
 
 .uvod {
-max-width: 1100px;
-min-height: 600px;
-margin: auto;
-padding: 70px 20px;
-display: flex;
-align-items: center;
-gap: 60px;
+  max-width: 1100px;
+  min-height: 600px;
+  margin: auto;
+  padding: 70px 20px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
 .uvod > div {
-flex: 1;
+  flex: 1;
 }
 
 .uvod > img {
-width: 48%;
-height: 400px;
-object-fit: cover;
-box-shadow: 20px 20px #ddd;
+  width: 48%;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 20px 20px #ddd;
 }
 
 .tag,
 .nadpis p {
-color: #777;
-font-size: 13px;
-font-weight: 600;
-letter-spacing: 1px;
+  color: #777;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 h1 {
-font-size: 55px;
-line-height: 1.15;
-margin: 15px 0;
+  font-size: 55px;
+  line-height: 1.15;
+  margin: 15px 0;
 }
 
 h1 span {
-color: #555;
+  color: #555;
 }
 
 .uvod p:not(.tag) {
-color: #666;
+  color: #666;
 }
 
 .tlacitka {
-margin-top: 25px;
+  margin-top: 25px;
 }
 
 .tlacitka a {
-display: inline-block;
-padding: 11px 20px;
-margin-right: 7px;
-color: #fff;
-background: #222;
-text-decoration: none;
+  display: inline-block;
+  padding: 11px 20px;
+  margin-right: 7px;
+  color: #fff;
+  background: #222;
+  text-decoration: none;
 }
 
 .tlacitka .druhy {
-color: #222;
-background: #fff;
-border: 1px solid #ddd;
+  color: #222;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
 .statistiky {
-max-width: 1100px;
-margin: 0 auto 40px;
-padding: 0 20px;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 15px;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
 }
 
 .statistiky > div {
-padding: 25px 15px;
-text-align: center;
-background: #fff;
-border: 1px solid #ddd;
+  padding: 25px 15px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
 .statistiky i,
 .dovednosti i {
-display: block;
-font-size: 25px;
-margin-bottom: 8px;
+  display: block;
+  font-size: 25px;
+  margin-bottom: 8px;
 }
 
 .statistiky strong,
 .statistiky span {
-display: block;
+  display: block;
 }
 
 .statistiky span {
-color: #888;
-font-size: 13px;
+  color: #888;
+  font-size: 13px;
 }
 
 .sekce {
-max-width: 1100px;
-margin: auto;
-padding: 75px 20px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 75px 20px;
 }
 
 .nadpis {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .nadpis h2 {
-font-size: 34px;
+  font-size: 34px;
 }
 
 .o-mne {
-display: flex;
-gap: 40px;
-align-items: center;
-padding: 25px;
-background: #fff;
-border: 1px solid #ddd;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
 .o-mne img {
-width: 45%;
-height: 330px;
-object-fit: cover;
+  width: 45%;
+  height: 330px;
+  object-fit: cover;
 }
 
 .o-mne h3 {
-font-size: 25px;
-margin-bottom: 15px;
+  font-size: 25px;
+  margin-bottom: 15px;
 }
 
 .o-mne p {
-color: #666;
-margin-bottom: 15px;
+  color: #666;
+  margin-bottom: 15px;
 }
 
 .dovednosti-sekce {
-max-width: none;
-background:
-linear-gradient(#fffffff2, #fffffff2),
-url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1600&q=80") center / cover;
+  max-width: none;
+  background:
+    linear-gradient(#fffffff2, #fffffff2),
+    url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1600&q=80") center / cover;
 }
 
 .dovednosti-sekce .nadpis,
 .dovednosti {
-max-width: 1100px;
-margin-left: auto;
-margin-right: auto;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dovednosti {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 18px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
 }
 
 .dovednosti > div {
-padding: 30px 20px;
-background: #fff;
-border: 1px solid #ddd;
+  padding: 30px 20px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
 .dovednosti p,
 .casova-osa p,
 .projekt p {
-color: #777;
-font-size: 14px;
+  color: #777;
+  font-size: 14px;
 }
 
 .casova-osa {
-display: flex;
-gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .casova-osa > div {
-flex: 1;
-padding: 25px;
-background: #fff;
-border-left: 4px solid #222;
+  flex: 1;
+  padding: 25px;
+  background: #fff;
+  border-left: 4px solid #222;
 }
 
 .casova-osa span,
 .projekt span {
-color: #999;
-font-size: 13px;
+  color: #999;
+  font-size: 13px;
 }
 
 .popis {
-color: #777;
-margin: -15px 0 30px;
+  color: #777;
+  margin: -15px 0 30px;
 }
 
 .projekty {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
 }
 
 .projekt {
-background: #fff;
-border: 1px solid #ddd;
-transition: .3s;
+  background: #fff;
+  border: 1px solid #ddd;
+  transition: .3s;
 }
 
 .projekt:hover {
-transform: translateY(-5px);
-box-shadow: 0 10px 25px #0001;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px #0001;
 }
 
 .projekt img {
-width: 100%;
-height: 240px;
-object-fit: cover;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
 }
 
 .projekt > div {
-padding: 25px;
+  padding: 25px;
 }
 
 .projekt h3 {
-font-size: 24px;
-margin: 5px 0;
+  font-size: 24px;
+  margin: 5px 0;
 }
 
 .projekt a {
-color: #222;
-font-weight: 600;
-text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .kontakt {
-padding-bottom: 90px;
+  padding-bottom: 90px;
 }
 
 .kontakt-box {
-display: flex;
-gap: 40px;
-align-items: center;
-padding: 45px;
-color: #fff;
-background:
-linear-gradient(#191919e6, #161616e6),
-url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1500&q=80") center / cover;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 45px;
+  color: #fff;
+  background:
+    linear-gradient(#191919e6, #161616e6),
+    url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1500&q=80") center / cover;
 }
 
 .kontakt-box > div {
-flex: 1;
+  flex: 1;
 }
 
 .kontakt-box h2 {
-font-size: 34px;
-margin: 8px 0;
+  font-size: 34px;
+  margin: 8px 0;
 }
 
 .kontakty {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .kontakty a,
 .kontakty > div {
-padding: 14px;
-color: #222;
-background: #fff;
-text-decoration: none;
+  padding: 14px;
+  color: #222;
+  background: #fff;
+  text-decoration: none;
 }
 
 .kontakty a:hover {
-background: #eee;
+  background: #eee;
 }
 
 footer {
-padding: 25px;
-text-align: center;
-color: #777;
-background: #fff;
-border-top: 1px solid #ddd;
+  padding: 25px;
+  text-align: center;
+  color: #777;
+  background: #fff;
+  border-top: 1px solid #ddd;
 }
 
 @media (max-width: 850px) {
-nav {
-flex-direction: column;
-gap: 12px;
-}
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
 
-nav ul {
+  nav ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-}
+  }
 
-.uvod,
-.o-mne,
-.kontakt-box {
+  .uvod,
+  .o-mne,
+  .kontakt-box {
     flex-direction: column;
-}
+  }
 
-.uvod {
+  .uvod {
     text-align: center;
-}
+  }
 
-.uvod > img,
-.o-mne img {
+  .uvod > img,
+  .o-mne img {
     width: 100%;
-}
+  }
 
-.statistiky,
-.dovednosti {
+  .statistiky,
+  .dovednosti {
     grid-template-columns: repeat(2, 1fr);
-}
+  }
 
-.casova-osa {
+  .casova-osa {
     flex-direction: column;
-}
-
+  }
 }
 
 @media (max-width: 600px) {
-h1 {
-font-size: 40px;
-}
+  h1 {
+    font-size: 40px;
+  }
 
-.uvod > img {
+  .uvod > img {
     height: 280px;
     box-shadow: 10px 10px #ddd;
-}
+  }
 
-.statistiky,
-.dovednosti,
-.projekty,
-.kontakty {
+  .statistiky,
+  .dovednosti,
+  .projekty,
+  .kontakty {
     grid-template-columns: 1fr;
-}
+  }
 
-.kontakt-box {
+  .kontakt-box {
     padding: 30px 20px;
-}
+  }
 
-.tlacitka a {
+  .tlacitka a {
     display: block;
     margin: 8px 0;
-}
-
+  }
 }
