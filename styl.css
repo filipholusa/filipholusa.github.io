@@ -294,7 +294,7 @@ align-items: center;
 padding: 45px;
 color: #fff;
 background:
-linear-gradient(#191919e6, #090909e6),
+linear-gradient(#191919e6, #161616e6),
 url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1500&q=80") center / cover;
 }
 
